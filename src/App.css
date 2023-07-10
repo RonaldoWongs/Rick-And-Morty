@@ -1,0 +1,202 @@
+
+header {
+   background-image: url(../image/cabezas-de-rick-and-morty_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 250px;
+    text-align: center;
+  }
+  
+
+body {
+    background-color: rgb(23, 9, 41);
+    color: white;
+  }
+ 
+  
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character-card {
+  position: relative; 
+  padding: 20px;
+  width: 300px;
+}
+
+
+.character-info-container {
+  border: 2px solid #807e7e;
+  border-radius: 4px;
+  padding: 10px;
+  border-radius: 9px;
+  background: rgba(77, 74, 74, 0.29);
+    backdrop-filter: blur(11px);
+}
+
+
+
+.status-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  padding: 5px;
+  border-radius: 4px;
+  color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.status-indicator.green {
+  background-color: green;
+}
+
+.status-indicator.red {
+  background-color: red;
+}
+
+.card-indicator.green {
+  box-shadow: 0 0 5px lawngreen, 0 0 20px lawngreen, 0 0 40px lawngreen;
+  margin-left: 50px;
+}
+
+.card-indicator.red {
+  box-shadow: 0 0 5px red, 0 0 20px  red, 0 0 40px red;
+  margin-left: 50px;
+
+}
+
+.status-text {
+  margin: 0;
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.character-details {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.character-card {
+  flex-basis: 18%; /* Establecemos el tamaño base al 23% para acomodar 4 cartas por fila */
+  margin: 20px;
+}
+
+.character-name-container {
+  border: 1px solid white;
+  border-radius: 8px;
+  background: rgba(82, 81, 81, 0.29);
+    backdrop-filter: blur(5px);
+}
+
+.character-name h3 {
+ overflow-wrap: break-word;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-results {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search {
+  margin-top: -20%;
+  margin-bottom: 25%;
+  margin-left: 37%;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 7px;
+  width: 30%;
+  text-align: center;
+  background: rgba(77, 74, 74, 0.29);
+  backdrop-filter: blur(11px);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.search input:hover {
+  box-shadow: 0 0 10px rgb(99, 11, 80), 0 0 40px rgb(99, 11, 80), 0 0 80px rgb(99, 11, 80);
+}
+
+.search button {
+  margin-left: 15px;
+  padding: 10px;
+  background: rgba(77, 74, 74, 0.29);
+  backdrop-filter: blur(11px);
+  border-radius: 7px;
+  color: white;
+  box-shadow: 0 0 10px rgb(99, 11, 80), 0 0 40px rgb(99, 11, 80), 0 0 80px rgb(99, 11, 80);
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255);
+}
+
+.dimension-card {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 29%;
+  padding: 40px;
+}
+
+
+.dimension-card h2 {
+  margin-left: 30px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.dimension-card h2:hover {
+  color: lawngreen;
+}
+  
