@@ -67,16 +67,6 @@ body {
   background-color: red;
 }
 
-.card-indicator.green {
-  box-shadow: 0 0 5px lawngreen, 0 0 20px lawngreen, 0 0 40px lawngreen;
-  margin-left: 50px;
-}
-
-.card-indicator.red {
-  box-shadow: 0 0 5px red, 0 0 20px  red, 0 0 40px red;
-  margin-left: 50px;
-
-}
 
 .status-text {
   margin: 0;
@@ -96,7 +86,7 @@ body {
 
 .character-card {
   flex-basis: 18%; /* Establecemos el tamaño base al 23% para acomodar 4 cartas por fila */
-  margin: 20px;
+  margin: 30px;
 }
 
 .character-name-container {
@@ -181,11 +171,11 @@ body {
 .dimension-card {
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 29%;
-  padding: 40px;
+  padding: 20px;
 }
 
 
@@ -199,4 +189,51 @@ body {
 .dimension-card h2:hover {
   color: lawngreen;
 }
+
+/* Media Query para dispositivos con ancho de pantalla entre 412px y 915px */
+@media (min-width: 412px) and (max-width: 915px) {
+  header {
+    background-image: url(../image/cabezas-de-rick-and-morty_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 200%; /* Ocupar todo el ancho del contenedor */
+  }
+  
+  
+  .character-card {
+    position: relative; 
+    padding: 35px;
+    width: 360px;
+    padding-left: 370px;
+  }
+  
+
+  .search {
+    margin-left: 20%; /* Ajustamos la posición del cuadro de búsqueda */
+  }
+
+
+  .dimension-card {
+    padding: 30px;
+    margin-top: 15%;
+  }
+
+  .dimension-card {
+    display: flex;
+    position: absolute;
+    top: 52%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    margin-top: 29%;
+    padding: 20px;
+  }
+
+ 
+}
+
+
   
